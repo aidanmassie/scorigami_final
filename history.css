@@ -4,7 +4,7 @@
   }
   
   .imgBackground{
-      background-image: url("timothe-lejeune-ITl68hX9EoQ-unsplash.jpg");
+      background-image: url("chargers2.jpg");
       background-size: 1500px;
       width: 100vw;
       height: 100vh;
@@ -28,4 +28,32 @@
       margin-top: 10px;
       font-size: 20px;
       color: white;
+    }
+
+    a{
+        position: relative;
+        text-decoration: none;
+        color: white;
+      }
+    
+      a:hover{
+        color: white;
+      }
+    
+      a:before{
+        content: "";
+        position: absolute;
+        width: 85%;
+        height: 3px;
+        bottom: -3px;
+        left: 0;
+        background-color: white;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+      }
+    
+    a:hover:before{
+      visibility: visible;
+      transform: scaleX(1);
     }
