@@ -5,15 +5,30 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="search.css">
   </head>
   <body>
-    <div class="wrap">
+    <div class="imgBackground">
+		<nav class="mainNav">
+            <ul class="rightSide">
+                <a href="index.html"><li class="navItem">HOME</li></a>
+                <a href="search.html"><li class="navItem">SEARCH</li></a>
+                <a href="history.html"><li class="navItem">HISTORY</li></a>
+                <a href="about.html"><li class="navItem">WHAT IS SCORIGAMI?</li></a>
+                <a href="credits.html"><li class="navItem">CREDITS</li></a>
+            </ul>
+        </nav>
+        <main class="titleText">SEARCH</main>
+        </div>
+    <div class="searchBox">
         Insert a higher score: <input type="text" name="ptsW" id="ptsW">
         Insert a lower score: <input type="text" name="ptsL" id="ptsL">
+        <br>
         <input type="button" id="submit" value="Submit">
         <br>
         Count: <h1 id="Count">0</h1>
+        Last Time: <h1 id="recent"></h1>
+        <h1 style="display: none" id="error">That Scorigami doesn't exist!</h1>
     </div>
 
     <!-- If using jQuery, it must be added BEFORE your own script -->

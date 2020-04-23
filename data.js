@@ -1,26 +1,43 @@
 const app = {
+
+    countScorigami : [],
+
     initialize: function () {
 
     $('#submit').click(function(){
 
-            $.ajax({
+            var dataReqURL = 'http://174.138.37.193/scorigamidata.json'
+                $.ajax({
 
-            url: 'https://github.com/aidanmassie/scorigami_final/blob/master/scorigamidata.json',
-            dataType: 'json',
-            success: function(data) {
-                //console.log("Temperature is:" + data);
+                url: dataReqURL,
+                type: 'GET',
+                dataType: 'json',
 
-                document.getElementById("ptsW").innerHTML = data.PtsW;
-                document.getElementById("ptsL").innerHTML = data.PtsL;
+                error: function() {
+                    alert("error");
+                },
 
-                $('ptsW').html(data.PtsW);
-                $('ptsL').html(data.PtsL);
-                $('Count').html(data.Count);
-            },
-            error: function() {
-                alert("error");
-            }
-            });        
+                success: function(data) {
+                    var score = null;
+                    for(i=0; i<data.length; i++){
+                        if ($('#ptsW').val() == data[i].PtsW && $('#ptsL').val() == data[i].PtsL){
+                            score = data[i];
+                        }
+                    }
+                    if (score == null){
+                        $('#error').show();
+                    }
+                    else {
+                        app.countScorigami = score.Count;
+                        console.log(score);
+
+                        document.getElementById("ptsW").innerHTML = score.PtsW;
+                        document.getElementById("ptsL").innerHTML = score.PtsL;
+                        document.getElementById("Count").innerHTML = score.Count;
+                        document.getElementById("recent").innerHTML = score['Last Game'];
+                    }
+                }
+                });        
         });
     }
 }
