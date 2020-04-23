@@ -5,7 +5,7 @@ const app = {
 
             $.ajax({
 
-            url: 'file:///Users/aidanmassie/Downloads/csvjson.json',
+            url: 'https://github.com/aidanmassie/scorigami_final/blob/master/scorigamidata.json',
             dataType: 'json',
             success: function(data) {
                 //console.log("Temperature is:" + data);
