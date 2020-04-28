@@ -6,6 +6,22 @@
         <title>NFL Scorigami</title> 
         <link rel="stylesheet" href="history.css">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                window.location.hash = hash;
+                });
+                }
+                });
+            });
+        </script>
 	</head>
 	<body>
         <div class="imgBackground">
@@ -19,6 +35,46 @@
             </ul>
         </nav>
         <main class="titleText">HISTORY</main>
+        <main class="description">
+            The NFL began in 1922, with ten teams from four states. The NFL was
+            the first professional football league to successfully establish a 
+            nationwide presence, after decades of failed attempts. 
+            <br>
+            <br>
+            There are only two teams still in existence from the start of the National
+            Football League: the Chicago Bears and the Arizona Cardinals. The Green Bay
+            Packers joined the league a year later, holding its place in history as the
+            team with the longest continuous operation in the same location.
+            </main>
+            <a href="#second" class="seeMore">SEE MORE</a>
         </div>
+    <div id="second">
+        <div class="description2">
+            <br>
+            <br>
+            <br>
+            In the inaugural season of the NFL, 68.9% of the games were shutouts (which is 
+            definitely not good for Scorigami's)! In the second season, we were given the only 
+            game in history containing exactly four points scored for one team.
+            <br>
+            <br>
+            In 1940, we were given arguably the most impressive Scorigami of all-time in 
+            the league championship. Chicago beat Washington's professional team with a score
+            of 73-0. No scorigami has ever come close to being such a high scoring shutout
+            through the remaining years of the league.
+            <br>
+            <br>
+            The reason that Scorigami is important in the game of football is because its scoring
+            units are extremely awkward. In almost all other sports, points are tallied by one.
+            In football, points can be scored in increments of 2, 3, 6, 7, or 8, which is why
+            each individual game poses the opportunity to have a unique outcome. In the 1960's, 
+            the AFL was merged with the NFL, adding teams to the league to create a total of 32.
+            Due to this league merger, Scorigami went off the charts. With more teams, there's more
+            games, there's more points being scored, and more Scorigami's being made. However, up until
+            1994, the two-point conversion was not a part of the NFL and caused annual rates of Scorigami
+            to dramatically increase. Due to the league reintroducing the conversion, they saved the art 
+            of Scorigami forever.
+        </div>
+    </div>
     </body>
 </html>
