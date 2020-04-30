@@ -26,6 +26,7 @@ const app = {
                     }
                     if (score == null){
                         $('#error').show();
+                        $('recent').html(score['Last Game']) = '';
                     }
                     else {
                         app.countScorigami = score.Count;
