@@ -6,6 +6,22 @@
         <title>NFL Scorigami</title> 
         <link rel="stylesheet" href="about.css">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("a").on('click', function(event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                window.location.hash = hash;
+                });
+                }
+                });
+            });
+        </script>
 	</head>
 	<body>
         <div class="imgBackground">
@@ -19,6 +35,32 @@
             </ul>
         </nav>
         <main class="titleText">WHAT IS SCORIGAMI?</main>
+        <main class="description">
+            Scorigami is a concept created by Jon Bois of SB Nation. Scorigami is the art 
+            of creating final scores that have never happened before in NFL history. Due
+            to the unique nature of scoring in the NFL, such as 2 points and 8 points, as 
+            well as an unhumanly act of scoring a single point in a game, there are hundreds
+            of different scores possible that have never happened.
+            </main>
+            <a href="#second" class="seeMore"><b>SEE MORE</b></a>
+        </div>
+        <div id="second">
+            <div class="description2">
+                <br>
+                <br>
+                NFL Scorigami affects the game of football in no way, shape or form. Scorigami
+                is simply a fun, statistical anomaly for statheads, like myself, to enjoy and
+                browse for hours on end. For more infomation on Scorigami, watch the video below
+                created by the founder of Scorigami, Jon Bois.
+                <br>
+                <br>
+                <iframe width="640" height="420"
+                    src="https://www.youtube.com/embed/9l5C8cGMueY">
+                </iframe>
+                <br>
+                <br>
+                
+            </div>
         </div>
     </body>
 </html>

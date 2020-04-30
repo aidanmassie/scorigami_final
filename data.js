@@ -30,11 +30,15 @@ const app = {
                     else {
                         app.countScorigami = score.Count;
                         console.log(score);
-
+                        debugger;
                         document.getElementById("ptsW").innerHTML = score.PtsW;
                         document.getElementById("ptsL").innerHTML = score.PtsL;
                         document.getElementById("Count").innerHTML = score.Count;
                         document.getElementById("recent").innerHTML = score['Last Game'];
+                        // $("#ptsW").html() = score.PtsW;
+                        // $("#ptsL").html() = score.PtsL;
+                        // $("#Count").html() = score.Count;
+                        // $("#recent").html() = score['Last Game'];
                     }
                 }
                 });        
