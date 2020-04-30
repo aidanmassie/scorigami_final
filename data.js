@@ -41,6 +41,7 @@ const app = {
                         $("#ptsL").html(score.PtsL);
                         $("#Count").html(score.Count);
                         $("#recent").html(score['Last Game']);
+                        $("#error").html('');
                     }
                 }
                 });        
