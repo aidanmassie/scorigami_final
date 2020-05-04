@@ -4,11 +4,9 @@
   }
   
   .imgBackground{
-      background-image: url("chargers2.jpg");
-      background-size: 1500px;
-      width: 100vw;
-      height: 100vh;
-      align-items: center;
+    background-position: center center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; background-size: cover;
   }
   .mainNav {
       display: block;
@@ -123,3 +121,77 @@
           color: white;
           background-color: #222222
     }
+
+    @media (min-width: 1025px) {
+        .imgBackground {
+          background-image: url("chargers2.jpg");
+          height: 100vh;
+       }
+      }
+      
+      /* iPads (portrait and landscape) ----------- */
+      @media (min-width: 481px) and (max-width: 1024px) {
+      
+        .imgBackground{
+          background-image: url("chargers2.jpg");
+          height: 1024px;
+        }
+        .navItem{
+          font-size: 16px;
+          margin-right: 10px;
+        }
+      
+        .titleText{
+          margin: 0px 100px;
+          font-size: 64px;
+        }
+      
+        .description{
+          margin: -60px 100px;
+          font-size: 28px;
+        }
+
+        .description2{
+        margin: -60px 100px;
+        font-size: 24px;
+        }
+        
+        }
+      
+        
+        @media (min-width: 320px) and (max-width: 480px) {
+          .imgBackground {
+            background-image: url("chargers2.jpg");
+            width: 480px;
+          }
+      
+          .titleText{
+            margin: 0px 40px;
+            font-size: 64px;
+          }
+        
+          .description{
+            margin: -60px 40px;
+            font-size: 32px;
+          }
+
+          .rightSide{
+            float: none;
+            text-align: center;
+          }
+      
+          .navItem{
+            font-size: 24px;
+          }
+      
+          .titleText{
+            padding-top: 100px;
+          }
+
+          .description2{
+            margin: -120px 40px;
+            font-size: 32px;
+            padding-right: 200px;
+            }
+
+      }

@@ -32,7 +32,6 @@ const app = {
                     else {
                         app.countScorigami = score.Count;
                         console.log(score);
-                        debugger;
                         // document.getElementById("ptsW").innerHTML = score.PtsW;
                         // document.getElementById("ptsL").innerHTML = score.PtsL;
                         // document.getElementById("Count").innerHTML = score.Count;
