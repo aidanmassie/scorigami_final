@@ -150,31 +150,41 @@
   
     
     @media (min-width: 320px) and (max-width: 480px) {
-      .imgBackground {
-        background-image: url("jets.jpg");
-        width: 480px;
-      }
-  
-      .titleText{
-        margin: 0px 40px;
-        font-size: 64px;
-      }
-    
-      .description{
-        margin: -60px 40px;
-        font-size: 32px;
-      }
+        html{
+            background-color: black;
+        }
+        
+        .imgBackground {
+            background-image: url("jets.jpg");
+            width: 480px;
+            height: 1024px;
+          }
+      
+          .titleText{
+            margin: 0px 40px;
+            font-size: 64px;
+            margin-top: -40px;
+          }
+        
+          .description{
+            margin: -60px 40px;
+            font-size: 32px;
+          }
 
-      .rightSide{
-        float: none;
-        text-align: center;
-      }
-  
-      .navItem{
-        font-size: 24px;
-      }
-  
-      .titleText{
-        padding-top: 100px;
-      }
+          .rightSide{
+            float: none;
+            text-align: center;
+          }
+      
+          .navItem{
+            font-size: 24px;
+          }
+      
+          .titleText{
+            padding-top: 100px;
+          }
+
+          #mc_embed_signup{
+              margin-top: -370px;
+          }
   }

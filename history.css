@@ -160,7 +160,11 @@
       
         
         @media (min-width: 320px) and (max-width: 480px) {
-          .imgBackground {
+          html{
+              background-color: black;
+          }
+          
+            .imgBackground {
             background-image: url("chargers2.jpg");
             width: 480px;
           }
@@ -191,7 +195,13 @@
           .description2{
             margin: -120px 40px;
             font-size: 32px;
-            padding-right: 200px;
+            padding: 10px;
+
             }
 
+        #second{
+            background-image: url(pass.jpg);
+            width: 480px;
+            background-color: black;
+        }
       }

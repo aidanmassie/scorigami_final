@@ -117,31 +117,35 @@
       
         
         @media (min-width: 320px) and (max-width: 480px) {
-          .imgBackground {
-            background-image: url("tunnel.jpg");
-            width: 480px;
-          }
-      
-          .titleText{
-            margin: 0px 40px;
-            font-size: 64px;
-          }
+            html{
+                background-color: black;
+            }
+            
+              .imgBackground {
+              background-image: url("tunnel.jpg");
+              width: 420px;
+            }
         
-          .description{
-            margin: -60px 40px;
-            font-size: 32px;
-          }
-
-          .rightSide{
-            float: none;
-            text-align: center;
-          }
-      
-          .navItem{
-            font-size: 24px;
-          }
-      
-          .titleText{
-            padding-top: 100px;
-          }
+            .titleText{
+              margin: 0px 40px;
+              font-size: 60px;
+            }
+          
+            .description{
+              margin: -60px 40px;
+              font-size: 32px;
+            }
+  
+            .rightSide{
+              float: none;
+              text-align: center;
+            }
+        
+            .navItem{
+              font-size: 21px;
+            }
+        
+            .titleText{
+              padding-top: 100px;
+            }
       }
