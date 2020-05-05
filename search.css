@@ -154,7 +154,8 @@
         @media (min-width: 320px) and (max-width: 480px) {
           .imgBackground {
             background-image: url("carolina.jpg");
-            width: 480px;
+            width: 400px;
+            height: 900px;
           }
       
           .titleText{
@@ -173,10 +174,13 @@
           }
       
           .navItem{
-            font-size: 24px;
+            font-size: 21px;
           }
       
           .titleText{
             padding-top: 100px;
+          }
+          .searchBox{
+              margin-top: -530px;
           }
       }
