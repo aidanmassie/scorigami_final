@@ -6,7 +6,7 @@ const app = {
 
     $('#submit').click(function(){
 
-            var dataReqURL = 'https://174.138.37.193:3000/scorigamidata.json'
+            var dataReqURL = 'https://raw.githubusercontent.com/aidanmassie/scorigami_final/master/scorigamidata.json'
                 $.ajax({
 
                 url: dataReqURL,
